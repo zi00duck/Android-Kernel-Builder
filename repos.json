@@ -1,15 +1,11 @@
-[
-  {
-    "kernelName": "hydra",
+[  {
     "kernelSource": {
-      "device": "begonia",
-      "defconfig": "begonia_user_defconfig",
-      "name": "Hydra-nonKSU",
+      "name": "hydra-nonKSU",
       "repo": "https://github.com/Hydra-Kernels/Hydra_Begonia",
-      "branch": "13.x"
+      "branch": "13.x",
+      "device": "begonia"
     },
-    "withRoot": "none",
-    "withSUSFS": false,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://gitlab.com/PixelOS-Devices/playgroundtc",
@@ -39,12 +35,5 @@
         "LLVM_AR": "clang-playground/bin/llvm-ar",
         "LLVM_DIS": "clang-playground/bin/llvm-dis"
       }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/cvnertnc/AnyKernel3/",
-      "branch": "begonia"
     }
-  }
 ]
